@@ -27,6 +27,6 @@ class ProductDetailView(DetailView):
     model = Product
     template_name = "crud/product_detail.html"
 
-class ProductDetailView(DetailView):
+class ProductDeletelView(DeletelView):
     model = Product
-    success_ur1 = reverse_lazy('list')    
+    success_url = reverse_lazy('list')    
