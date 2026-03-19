@@ -1,0 +1,17 @@
+{% extends "crud/base.html" %}
+
+{% block content %}
+<h1>商品詳細</h1>
+
+<p>商品名：{{ object.name }}</p>
+<p>価格：{{ object.price }}</p>
+<p>カテゴリ：{{ object.category }}</p>
+
+<p>商品画像</p>
+<img src="{{ object.img.url }}" width="200">
+
+<p>商品詳細の説明</p>
+<p>{{ object.description }}</p>
+
+<a href="{% url 'list' %}">戻る</a>
+{% endblock %}
